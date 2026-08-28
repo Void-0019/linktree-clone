@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔗 Linktree Clone
 
-## Getting Started
+> **🚀 A Linktree-inspired link-in-bio platform built with Next.js.**
 
-First, run the development server:
+A modern **Linktree-inspired link-in-bio website** built with Next.js, React, and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project focuses on creating a clean, responsive, and visually appealing interface for showcasing a profile, social links, and multiple personal links in one place.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📋 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* 🔗 Link-in-Bio Landing Page
+* 👤 Profile Section
+* 🖼️ Profile Image
+* 🌐 Social & External Links
+* 🔘 Custom Link Buttons
+* 🧭 Navigation Bar
+* 🖼️ Custom Images & Assets
+* 📱 Responsive Design
+* 🎨 Modern & Minimal UI
+* ⚡ Next.js Application
+* ✨ Interactive & Visual Link Sections
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+* **Frontend:** Next.js, React
+* **Styling:** Tailwind CSS
+* **Language:** JavaScript
+* **Framework:** Next.js
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Development Progress
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ✅ Project setup & Next.js configuration
+- ✅ Tailwind CSS & custom styling
+- 🚧 Navbar & main page
+- 🚧 Profile section & profile image
+- ⏳ Link sections & custom assets
+- ⏳ Responsive design
+- ⏳ UI/UX improvements
+- ⏳ Backend & dynamic functionality
+- ⏳ Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔮 Future Updates
 
-## Deploy on Vercel
+The current version focuses primarily on the frontend experience. Future development may include:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* 🚀 User authentication
+* 🔗 Dynamic link management
+* ✏️ Edit & reorder links
+* 🎨 More customization options
+* 📊 Link analytics
+* 💾 Database integration
+* 🖼️ Profile customization
+* 🔗 Custom profile URLs
+* ⚡ Performance optimizations
+* 🌐 Production deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⭐ Support the Project
+
+If you like this **Linktree Clone** or find it useful, consider **starring ⭐ the repository**.
+
+More features and improvements will be added as development continues.
+
+---
+
+**Status:** 🚀 Currently in Development
