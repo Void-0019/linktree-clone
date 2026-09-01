@@ -49,9 +49,13 @@ export default function Home() {
   return (
     <main>
       <section className="bg-[#d2e823] min-h-screen grid grid-cols-2">
-      <div className="flex items-center justify-center flex-col mx-[4vw] gap-10">
-        <p className="text-[#254f1a] font-bold text-8xl">A link in bio built for you.</p>
-        <p className="text-[#254f1a] text-2xl">Join 70M+ people using Linktree for their link in bio. One link to help you share everything you create, curate and sell from your Instagram, TikTok, Twitter, YouTube and other social media profiles.</p>
+      <div className="flex items-center justify-center flex-col mx-[4vw] gap-5 m-120">
+        <p className="text-[#254f1a]  text-8xl [-webkit-text-stroke:8px_currentColor] scale-y-90">A link in bio built for you.</p>
+        <p className="text-[#254f1a] text-xl font-medium scaley-90">Join 70M+ people using Linktree for their link in bio. One link to help you share everything you create, curate and sell from your Instagram, TikTok, Twitter, YouTube and other social media profiles.</p>
+        <div className="flex gap-6 w-full mt-8">
+        <input placeholder="linktr.ee/" className=" bg-white border-white rounded-xl p-5 w-full placeholder:font-bold placeholder:text-xl" type="text" />
+        <button className="w-full p-5 bg-[#254f1a] text-white font-bold rounded-4xl text-xl">Get started for free</button>
+        </div>
       </div>
       <div className="h-screen flex items-center justify-center overflow-hidden">
 
