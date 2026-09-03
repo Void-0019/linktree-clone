@@ -121,7 +121,7 @@ export default function Home() {
           </video>
         </div>
 
-        <div className="flex items-start justify-center flex-col mx-[4vw] gap-5 m-90">
+        <div className="flex items-start justify-center flex-col mx-[4vw] gap-5">
           <p className="text-[#d2e823]  text-6xl [-webkit-text-stroke:4px_currentColor]">Create and <br /> customize your <br /> Linktree in minutes</p>
           <p className="text-white text-xl font-medium scaley-90">Connect all your content across social media, websites, stores and more in one link in bio. Customize every detail or let Linktree automatically enhance it to match your brand and drive more clicks.</p>
           <button className="w-1/2 p-5 bg-[#d2e823] text-black font-bold rounded-4xl text-xl">Get started for free</button>
@@ -129,15 +129,44 @@ export default function Home() {
       </section>
 
       <section className="bg-[#780016] h-[115vh] grid grid-cols-2">
-        <div className="flex items-start justify-center flex-col mx-[4vw] gap-5 m-90">
+        <div className="flex items-start justify-center flex-col mx-[4vw] gap-5">
           <p className="text-[#e9c0e9]  text-7xl [-webkit-text-stroke:5px_currentColor] scale-y-90">Share your Linktree <br /> anywhere you like!</p>
           <p className="text-white text-xl font-medium scaley-90">Add your unique Linktree URL to all the platforms and places you find your audience. Then use your QR code to drive your offline traffic back to your link in bio.</p>
           <button className="w-1/2 p-5 bg-[#e9c0e9] text-black font-bold rounded-4xl text-xl">Get started for free</button>
         </div>
 
-        <div>
-
+        <div className="flex justify-center items-center">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-150 h-auto filter-[brightness(1.05)]"
+          >
+            <source src="/linkly_cards_loop.mp4" type="video/mp4" />
+          </video>
         </div>
+      </section>
+
+      <section className="bg-[#e8efd6] h-[115vh] grid grid-cols-2">
+
+        <div className="flex justify-center items-center">
+          <img height={700} width={700} src="/analyze.avif" alt="analyze" />
+        </div>
+
+        <div className="flex items-start justify-center flex-col mx-[4vw] gap-5">
+          <p className="text-[#1e2330]  text-7xl [-webkit-text-stroke:5px_currentColor] scale-y-90">Analyze your audience and keep them engaged</p>
+          <p className="text-[#1e2330] text-xl font-medium scaley-90">Track your engagement over time, monitor revenue and learn what’s converting your audience. Make informed updates on the fly to keep them coming back.</p>
+          <button className="w-1/2 p-5 bg-[#e9c0e9] text-[#1e2330] font-bold rounded-4xl text-xl">Get started for free</button>
+          </div>
+
+      </section>
+
+
+      <section className="bg-[#f3f3f1] h-[200vh]">
+
+        <div className="text-[#1e2330] text-7xl text-center pt-40 [-webkit-text-stroke:5px_currentColor]">The only link in bio trusted by 70M+</div>
+
       </section>
     </main>
   );
