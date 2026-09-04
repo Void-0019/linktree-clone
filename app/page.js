@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react";
+import AnimatedText from "@/components/AnimatedText";
 
 export default function Home() {
 
@@ -164,9 +165,7 @@ export default function Home() {
 
 
       <section className="bg-[#f3f3f1] h-[200vh]">
-
-        <div className="text-[#1e2330] text-7xl text-center pt-40 [-webkit-text-stroke:5px_currentColor]">The only link in bio trusted by 70M+</div>
-
+      <AnimatedText/>
       </section>
     </main>
   );
