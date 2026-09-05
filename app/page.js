@@ -1,51 +1,26 @@
 "use client"
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import AnimatedText from "@/components/AnimatedText";
+import useInfiniteCarousel from "@/hooks/useInfiniteCarousel";
 
 export default function Home() {
 
-  const trackRef = useRef(null);
+    const verticalTrackRef = useRef(null);
+const horizontalTrackRef = useRef(null);
 
-  useEffect(() => {
-    const track = trackRef.current;
+useInfiniteCarousel(verticalTrackRef, {
+  direction: "up",
+  speed: 200,
+  gap: 40,
+});
 
-    if (!track) return;
-
-    let position = 0;
-    let lastTime = performance.now();
-    let animationFrame;
-
-    const speed = 200;
-
-    function animate(time) {
-      const delta = (time - lastTime) / 1000;
-      lastTime = time;
-
-      position -= speed * delta;
-
-      const cardHeight = 600;
-      const gap = 40;
-      const cardDistance = cardHeight + gap;
-
-      if (Math.abs(position) >= cardDistance) {
-        position += cardDistance;
-
-
-        track.appendChild(track.children[0])
-      }
-
-      track.style.transform = `translateY(${position}px)`
-
-      animationFrame = requestAnimationFrame(animate);
-    }
-
-    animationFrame = requestAnimationFrame(animate)
-
-    return () => {
-      cancelAnimationFrame(animationFrame)
-    };
-  }, []);
+useInfiniteCarousel(horizontalTrackRef, {
+  direction: "left",
+  speed: 80,
+  gap: 10,
+  pauseOnHover: true,
+});
 
   return (
     <main>
@@ -61,7 +36,7 @@ export default function Home() {
         <div className="h-[125vh] flex items-center justify-center overflow-hidden">
 
           {/* Moving track */}
-          <div ref={trackRef} className="flex flex-col gap-10">
+          <div ref={verticalTrackRef} className="flex flex-col gap-10">
 
             <div className="h-150 w-150 flex items-center justify-center">
               <img className="rounded-4xl w-full h-full object-cover"
@@ -166,6 +141,60 @@ export default function Home() {
 
       <section className="bg-[#f3f3f1] h-[200vh]">
       <AnimatedText/>
+
+      <div className="overflow-hidden w-full pt-20">
+      <div ref={horizontalTrackRef} className="flex gap-5 w-max">
+
+            <div className="h-110 w-90 flex items-center justify-center">
+              <img className="rounded-4xl w-full h-full object-cover"
+                src="/hbo.avif"
+                alt="HBO"
+              />
+            </div>
+
+            <div className="h-110 w-150 flex items-center justify-center">
+              <img className="rounded-[70px] w-full h-full object-cover"
+                src="/comedycentral.avif"
+                alt="Comedy_Central"
+              />
+            </div>
+
+            <div className="h-110 w-80 flex items-center justify-center">
+              <img className="rounded-[500px] w-full h-full object-cover"
+                src="/pharrell.avif"
+                alt="Pharrell"
+              />
+            </div>
+
+            <div className="h-110 w-140 flex items-center justify-center">
+              <img className="rounded-[50px] w-full h-full object-cover"
+                src="/tonyhawk.avif"
+                alt="Tony_Hawk"
+              />
+            </div>
+
+            <div className="h-110 w-80 flex items-center justify-center">
+              <img className="rounded-4xl w-full h-full object-cover"
+                src="/laclippers.avif"
+                alt="LA_Clippers"
+              />
+            </div>
+
+            <div className="h-110 w-85 flex items-center justify-center">
+              <img className="rounded-[50px] w-full h-full object-cover"
+                src="/selenagomez.avif"
+                alt="Selena_Gomez"
+              />
+            </div>
+
+            <div className="h-110 w-90 flex items-center justify-center">
+              <img className="rounded-[200px] w-full h-full object-cover"
+                src="/funkynutmeg.avif"
+                alt="Funky_Nutmeg"
+              />
+            </div>
+          </div>
+          </div>
       </section>
     </main>
   );
