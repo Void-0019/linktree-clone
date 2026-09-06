@@ -139,7 +139,7 @@ useInfiniteCarousel(horizontalTrackRef, {
       </section>
 
 
-      <section className="bg-[#f3f3f1] h-[200vh]">
+      <section className="bg-[#f3f3f1] h-[300vh]">
       <AnimatedText/>
 
       <div className="overflow-hidden w-full pt-20">
@@ -194,6 +194,22 @@ useInfiniteCarousel(horizontalTrackRef, {
               />
             </div>
           </div>
+          </div>
+
+
+          <div className="grid grid-cols-2 pt-40 h-screen">
+            <div className="grid">
+              <div className="bg-[#e9c0e9]">
+              <img src="/all-your-things.avif" alt="" />
+              </div>
+              <div className="bg-[#d2e823]">
+              <img src="/products.avif" alt="" />
+              </div>
+            </div>
+
+            <div className="bg-[#061492]">
+            <img src="/group.avif" alt="" />
+            </div>
           </div>
       </section>
     </main>
